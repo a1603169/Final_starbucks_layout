@@ -27,6 +27,14 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="./css/main.css" /> <!-- 웬만하면 최후에 적용하도록! 초기 세팅 먼저 해놓자 -->
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+
+  <!-- Swiper css파일도 같이 필요합니다 꼭꼭꼭 자바스크립트랑 같이 그리고 npm 깔아야햄 -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
   <script defer src="./js/main.js"></script>
 </head>
 <body>
@@ -361,7 +369,85 @@
         </li>
       </ul>
     </div>
+    
+    <div class="badges">
+      <div class="badge">
+        <img src="./images/badge1.jpg" alt="badge" />
+        <div class="badge">
+          <img src="./images/badge2.jpg" alt="badge" />
+        </div>
+      </div>
+    </div>
 
   </header> 
+
+  <!-- VISUAL -->
+  <section class="visual">
+    <!-- section은 기능적으로 특별한 것은 없음 -->
+    <div class="inner">
+
+      <div class="title fade-in">
+        <!-- command click 하면 파일 열림 -->
+        <img src="./images/visual_title.png" alt="STARBUCKS DELIGHTFUL START TO THE YEAR" />
+        <a href="javascript:void(0)" class="btn btn--brown">자세히보기</a>
+      </div>
+      <div class="fade-in">
+        <img src="./images/visual_cup1.png" alt="new OATMEAL LATTE" class="cup1 image" />
+        <img src="./images/visual_cup1_text.png" alt="오트밀 라떼" class="cup1 text" />
+      </div>
+      <div class="fade-in">
+        <img src="./images/visual_cup2.png" alt="new STARBUCKS CARAMEL CRUMBLE MOCCA" class="cup2 image" />
+      <img src="./images/visual_cup2_text.png" alt="스타벅스 카라멜 크럼블 모카" class="cup2 text" />
+      </div>
+      <div class="fade-in">
+      <img src="./images/visual_spoon.png" alt="Spoon" class="spoon" />
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="notice">
+
+
+    <div class="notice-line">
+      <div class="bg-left"></div>
+      <div class="bg-right"></div>
+      <div class="inner">
+
+        <div class="inner__left">
+          <h2>공지사항</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">크리스마스 & 연말연시 스타벅스 매장 영업시간</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">[당첨자 발표] 2021 스타벅스 플래너 영수증 이벤트</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">스타벅스커피 코리아 애플리케이션 버젼 업데이트 안내</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">[당첨자 발표] 뉴이어 전자영수증 이벤트</a>
+              </div>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="notice-line__more">
+            <div class="material-icons">add_circle</div>
+          </a>
+        </div>
+        <div class="inner__right">
+          <h2>스타벅스 프로모션</h2>
+          <div class="toggle-promotion">
+            <div class="material-icons">upload</div>
+          </div>
+        </div>
+      </div>     
+
+    </div>
+
+
+  </section>
 </body>
 </html>
