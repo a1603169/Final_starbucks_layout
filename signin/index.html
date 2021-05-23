@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="../css/main.css" /> <!-- 웬만하면 최후에 적용하도록! 초기 세팅 먼저 해놓자 -->
   <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/signin.css">
 
   <script defer src="../js/common.js"></script>
 </head>
@@ -367,7 +368,25 @@
   </header> 
 
   <section class="signin">
-
+    <h1>LOG-IN</h1>
+    <div class="signin__card">
+      <h2> <span>Welcome!</span> To Starbucks.</h2>
+      <form>
+        <input type="text" placeholder="Your ID">
+        <input type="password" placeholder="Your Password">
+        <input type="submit" placeholder="로그인">
+        <p>
+          * The password can be abused, if you are using with other websties, <br />
+          Make sure to change your password periodically!
+        </p>
+      </form> 
+      <!-- 입력 양식 어디로 출력되는지 출력  -->
+      <div class="actions">
+        <a href="javascript:void(0)">Sign in</a>
+        <a href="javascript:void(0)">Forgot ID?</a>
+        <a href="javascript:void(0)">Forgot Password?</a>
+      </div>
+    </div>
   </section>
 
   <footer>
