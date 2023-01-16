@@ -422,6 +422,8 @@ header .badges .badge {
 
 
 .notice .notice-line .inner__left{
+  overflow:hidden; 
+  /* This is to fix the bugs of the library that shows all the inner contents which shouldn't be appear, above the div container */
   width: 60%;
   height: 100%;
   background-color: #333;
